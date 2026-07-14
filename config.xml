@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+    <id>acw_supplier_manager</id>
+
+    <name>ACW Supplier Manager</name>
+
+    <version>0.1.0</version>
+
+    <type>extension</type>
+
+    <category>Inventory</category>
+
+    <description>
+        ACW Supplier Manager for AbanteCart 1.4.2.
+        Import supplier price lists, update product pricing,
+        stock quantities and manage supplier profiles.
+    </description>
+
+    <author>
+        <name>Andre van den Berg</name>
+        <company>ACW</company>
+        <email>andre@acw.co.za</email>
+        <website>https://acw.co.za</website>
+    </author>
+
+    <compatibility>
+        <version_min>1.4.2</version_min>
+        <version_max>1.4.99</version_max>
+    </compatibility>
+
+    <install>
+        <sql>install.sql</sql>
+        <php>install.php</php>
+    </install>
+
+    <files>
+        <admin>admin</admin>
+        <catalog>catalog</catalog>
+        <core>core</core>
+    </files>
+
+    <permissions>
+        <access>extension/acw_supplier_manager</access>
+        <modify>extension/acw_supplier_manager</modify>
+    </permissions>
+</extension>
