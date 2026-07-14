@@ -1,0 +1,9 @@
+/vendor/
+/storage/logs/*
+/storage/temp/*
+/storage/uploads/*
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
