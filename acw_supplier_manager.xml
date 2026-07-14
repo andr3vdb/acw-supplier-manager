@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions>
+
+    <definition key="heading_title">
+        ACW Supplier Manager
+    </definition>
+
+    <definition key="text_version">
+        Version 0.1.0
+    </definition>
+
+    <definition key="button_export">
+        Export Products
+    </definition>
+
+    <definition key="button_import">
+        Import Supplier File
+    </definition>
+
+    <definition key="button_settings">
+        Settings
+    </definition>
+
+</definitions>

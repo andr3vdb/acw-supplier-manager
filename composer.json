@@ -1,0 +1,27 @@
+{
+    "name": "acw/supplier-manager",
+    "description": "ACW Supplier Manager for AbanteCart",
+    "type": "project",
+    "version": "0.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre van den Berg",
+            "company": "ACW"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "phpoffice/phpspreadsheet": "^2.1",
+        "monolog/monolog": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ACW\\SupplierManager\\": "core/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
