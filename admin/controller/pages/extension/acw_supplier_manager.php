@@ -18,7 +18,7 @@ class ControllerPagesExtensionAcwSupplierManager extends AController
             [
                 'title' => 'Export Products',
                 'icon'  => 'fa-download',
-                'url'   => $this->html->getSecureURL('extension/acw_supplier_manager/export')
+                'url' => $this->html->getSecureURL('extension/export')
             ],
             [
                 'title' => 'Import Supplier File',
