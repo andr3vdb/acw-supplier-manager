@@ -20,50 +20,39 @@
 if (!defined('DIR_CORE')) {
     header('Location: static_pages/');
 }
-require_once(DIR_EXT.'banner_manager'.DS.'core'.DS.'custom_block_hook.php');
+require_once(DIR_EXT.'acw_supplier_manager'.DS.'core'.DS.'custom_block_hook.php');
 $controllers = [
     'storefront' => [
-        'responses/extension/banner_manager',
-        'blocks/banner_block',
+        'responses/extension/acw_supplier_manager',
     ],
-    'admin'      => [
-        'pages/extension/banner_manager',
-        'responses/listing_grid/banner_manager',
-        'pages/extension/banner_manager_stat',
-        'responses/listing_grid/banner_manager_stat',
-        'responses/extension/banner_manager_chart',
+    'admin' => [
+        'pages/extension/acw_supplier_manager',
+        'responses/listing_grid/acw_supplier_manager',
     ],
 ];
 
 $models = [
-    'storefront' => ['extension/banner_manager'],
-    'admin'      => ['extension/banner_manager'],
+    'storefront' => [
+        'extension/acw_supplier_manager',
+    ],
+    'admin' => [
+        'extension/acw_supplier_manager',
+    ],
 ];
 
 $languages = [
     'storefront' => [
-        'banner_manager/banner_manager',
+        'acw_supplier_manager/acw_supplier_manager',
     ],
-    'admin'      => [
-        'banner_manager/banner_manager',
+    'admin' => [
+        'acw_supplier_manager/acw_supplier_manager',
     ],
 ];
 
 $templates = [
-    'storefront' => [
-        'blocks/banner_block.tpl',
-        'blocks/banner_block_content.tpl',
-        'blocks/banner_block_header.tpl',
-        'blocks/banner_block/one_by_one_slider_banner_block.tpl',
-        'blocks/banner_block/flex_slider_banner_block.tpl',
-
+    'admin' => [
+        'pages/extension/acw_supplier_manager.tpl',
+        'pages/extension/acw_supplier_manager_form.tpl',
     ],
-    'admin'      => [
-        'pages/extension/banner_manager.tpl',
-        'pages/extension/banner_manager_form.tpl',
-        'responses/extension/banner_listing.tpl',
-        'pages/extension/banner_manager_stat.tpl',
-        'pages/extension/banner_manager_stat_details.tpl',
-        'pages/extension/banner_manager_block_form.tpl',
-    ],
+    'storefront' => [],
 ];

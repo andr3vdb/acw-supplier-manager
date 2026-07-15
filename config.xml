@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <extension>
-	<id>banner_manager</id>
-	<version>1.1.1</version>
+	<id>acw_supplier_manager</id>
+<name>ACW Supplier Manager</name>
 	<type>extensions</type>
 	<category>extensions</category>
 	<cartversions>
@@ -14,7 +14,7 @@
 		<item>preview.png</item>
 	</preview>
 	<help_file><![CDATA[help.txt]]></help_file>
-	<additional_settings><![CDATA[extension/banner_manager]]></additional_settings>
+	<add<additional_settings><![CDATA[extension/acw_supplier_manager]]></additional_settings>
 	<note>true</note>
 	<install>
 		<sql>install.sql</sql>
